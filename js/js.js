@@ -17,6 +17,7 @@ function multiplicar (){
 function dividir (){
     var num1 = document.getElementById("num1").value;//10
     var num2 = document.getElementById("num2").value;//15
+    var resultado = document.getElementById("resultado") 
     
     resultado.innerHTML = (num1 / num2)
 }
@@ -24,6 +25,10 @@ function dividir (){
 function sumar (){
     var num1 = document.getElementById("num1").value;//10
     var num2 = document.getElementById("num2").value;//15
+    var resultado = document.getElementById("resultado")
+    
+    num1 = parseFloat(num1)
+    num2 = parseFloat(num2)
     
     resultado.innerHTML = (num1 + num2)
 }
@@ -31,6 +36,7 @@ function sumar (){
 function resta (){
     var num1 = document.getElementById("num1").value;//10
     var num2 = document.getElementById("num2").value;//15
+    var resultado = document.getElementById("resultado") 
     
     resultado.innerHTML = (num1 - num2)
 }
@@ -40,6 +46,4 @@ btn_d.addEventListener('click',dividir)
 btn_s.addEventListener('click',sumar)
 btn_r.addEventListener('click',resta)
     
-
-
 
