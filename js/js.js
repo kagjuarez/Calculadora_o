@@ -29,7 +29,6 @@ function sumar (){
     
     num1 = parseFloat(num1)
     num2 = parseFloat(num2)
-    
     resultado.innerHTML = (num1 + num2)
 }
 
